@@ -3,6 +3,16 @@ using System.Text;
 using System.Net;
 using System.Collections.Specialized;
 
+/*
+
+  Example tested & compiled with the following compilers 
+
+    .NET Core 3.1, 
+    .NET 4.7.2 
+    Roslyn 3.4
+
+*/
+
 public class Program
 {	
 	public static void Main()
@@ -10,6 +20,14 @@ public class Program
 		using (var wb = new WebClient())
 		{
 			var data = new NameValueCollection();
+
+      /*
+
+        Get your SMSLink / SMS Gateway Connection ID and Password from 
+        https://www.smslink.ro/get-api-key/
+        
+      */
+
 			data["connection_id"] = "... My Connection ID ...";
 			data["password"]      = "... My Connection Password ...";
 			data["to"]            = "07xyzzzzzz";
