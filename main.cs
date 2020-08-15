@@ -7,7 +7,7 @@ using System.Collections.Specialized;
 
   Example tested & compiled with the following compilers 
 
-    .NET Core 3.1, 
+    .NET Core 3.1
     .NET 4.7.2 
     Roslyn 3.4
 
