@@ -21,12 +21,12 @@ public class Program
 		{
 			var data = new NameValueCollection();
 
-            /*
+                  /*
 
-              Get your SMSLink / SMS Gateway Connection ID and Password from 
-              https://www.smslink.ro/get-api-key/
-              
-            */
+                    Get your SMSLink / SMS Gateway Connection ID and Password from 
+                    https://www.smslink.ro/get-api-key/
+                    
+                  */
 
 			data["connection_id"] = "... My Connection ID ...";
 			data["password"]      = "... My Connection Password ...";
