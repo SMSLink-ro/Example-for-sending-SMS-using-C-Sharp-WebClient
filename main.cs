@@ -33,6 +33,13 @@ public class Program
 			data["to"]            = "07xyzzzzzz";
 			data["message"]       = "Test Message";
 			
+                        /*
+
+                          HTTPS API Endpoint:  https://secure.smslink.ro/sms/gateway/communicate/index.php
+                          HTTP API Endpoint:   http://www.smslink.ro/sms/gateway/communicate/index.php
+
+                        */
+                        
 			var response = wb.UploadValues("https://secure.smslink.ro/sms/gateway/communicate/index.php", "POST", data);
 			string responseInString = Encoding.UTF8.GetString(response);
 
